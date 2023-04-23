@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bundle.swiper.css">
+    <link rel="shortcut icon" href="/logo.jpg">
+    <script src="https://kit.fontawesome.com/ab0ad33bb9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="swiper-bundle.js">
+</head>
+
+<body>
+    <header>
+        <nav class="Navbar">
+            <label class="logo">Skylights Bookstore</label>
+            <div class="topnav"></div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Bestseller">Best Seller</a></li>
+                <li><a href="#Recommendation">Recommendations</a></li>
+                <li><a href="#Review">Reviews</a></li>
+                <li><a href="#About">About</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Home"></section>
+        <div class="Home">
+            <div><img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_813319932_383768.jpg"
+                    width="100%" height="525px"></div>
+        </div>
+        <h1>WELCOME TO THE STORE </h1>
+        <h3>We are available in your service always!</h3>
+        </div><br><br>
+        <section id="Bestseller"></section>
+        <div class="Bestseller">
+            <h2>Best selling books</h2>
+            <div class="flexcontainer1">
+                <div class="container1"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRURuJJ-JnblpT5n5hWXw7M27_4RIfs8_2SA&usqp=CAU"
+                        alt="image" height="250px"><br><i class="fa-solid fa-cart-plus"></i>
+                    <p1>Midnight Library <br> <small>INR 299.00</small></p1>
+                </div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2PijR_ug0e9QEN1z-Nf8jvyRvADSKstWTnA&usqp=CAU"
+                        alt="image" height="250px"><i class="fa-solid fa-cart-plus"></i>
+                    <p2>It Starts With Us<br>INR 299.00</p2>
+                </div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaHv15PDtW7SOnwSIrbtQsBK9Z8KcCCYIcA&usqp=CAU"
+                        alt="image" height="250px"><i class="fa-solid fa-cart-plus"></i>
+                    <p3>The Light We Carry <br> INR 299.00</p3>
+                </div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdV5KpTKmkw50b_5G7k7SNLEhg-9sN-V5SIw&usqp=CAU"
+                        alt="image" height="250px"><i class="fa-solid fa-cart-plus"></i>
+                    <p4>The Bullet We Missed <br> INR 299.00</p4>
+                </div>
+            </div>
+    </main><br><br>
+    <section id="Recommendation"></section>
+    <div class="recommendation">
+        <h2>Recommendations <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1WSQcemZTujzfWWWFXVTCXpncr_1cadBzw&usqp=CAU"
+                alt="image" height="50px"></h2>
+        <div class="flexcontainer2">
+            <div class="container2"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAusz0XR1sd_GkZfiWA4fiGSzKiCdHyRPH8w&usqp=CAU"
+                    alt="image" height="245px">
+                <p1><br>Our missing hearts<br> <small>INR 99.00</small></p1>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSksTcYuGus-xOAw0EIwR-QPAXA0Ep9pSpbw&usqp=CAU"
+                    alt="image" height="245px">
+                <p2><br> The last thing he told me INR 199.00</p2>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOOEma7LMrpxk1891Q8G2cXJT2dbYBM2TRQ&usqp=CAU"
+                    alt="image" height="245px">
+                <p3><br> Normal people <br> INR 299.00</p3>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfb5Z7oGSH5MAK8IbJ1RJ4VZc9vaaE4AQMg&usqp=CAU"
+                    alt="image" height="245px">
+                <p4><br>The guest list<br> INR 399.00</p4>
+            </div>
+        </div>
+        </main> <br> <br>
+        <style>
+            * {box-sizing: border-box}
+        
+            .slideshow-container {
+              position: relative;
+              background: #f1f1f1f1;
+            }
+            
+            .mySlides {
+              display: none;
+              padding: 80px;
+              text-align: center;
+            }
+            
+            .prev .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              margin-top: -30px;
+              padding: 16px;
+              color: #888;
+              font-weight: bold;
+              font-size: 20px;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            
+            .next {
+              position: absolute;
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            .prev:hover .next:hover {
+              background-color: rgba(0,0,0,0.8);
+              color: white;
+            }
+           
+            .dot-container {
+                text-align: center;
+                padding: 20px;
+                background: #ddd;
+            }
+            
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+           
+            .active .dot:hover {
+              background-color: #717171;
+            }
+            
+            q {font-style: italic;}
+            
+            .author {color: cornflowerblue;}
+            </style>
+        
+        <h2>
+            Reviews
+        </h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, cupiditate mollitia necessitatibus
+                    quisquam dignissimos, libero id omnis obcaecati culpa officia nobis recusandae exercitationem
+                    laudantium quis laborum!</q>
+                <p class="author">- John Keats <br> Author</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reiciendis expedita quaerat? Illum
+                    saepe quisquam dolorem. Deserunt deleniti ea molestiae!</q>
+                <p class="author">- Ernest Hemingway <br> Student</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti deserunt temporibus asperiores vel
+                    molestiae consequuntur ea itaque? Vitae reiciendis fugit maxime, explicabo doloribus, illo,
+                    veritatis nulla libero dolor incidunt magni.</q>
+                <p class="author">- Thomas A. Edison <br> Professor</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+             
+<br><br>
+</body>
+<footer>
+    <div id="About">
+        <div class="content"><img src="/logo.jpg" height="30px"><br>About<br></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, aut ad magnam
+            cum in sint hic eius tempora molestiae consequatur tenetur rem, ea ipsa est blanditiis pariatur
+            nihil repellat voluptatibus? Facere ipsam, enim ab, repellendus fugiat, aspernatur assumenda
+            laudantium mollitia esse rem nam neque nemo molestias fuga.</div>
+        <ul class="social">
+            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a><i class="fa-brands fa-square-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <p>Copyright &copy; reserved to Skylights Bookstore</p>
+    </div>
+</footer>
